@@ -1,21 +1,29 @@
 '''
 Created on Mon Feb 4 10:39:37 2022
+
 @author: C. Schulz
+
 Description: Using a numeric grading scale to tell a user's grade.
+
 Saved as prog4d.py
 '''
 
-from asyncore import loop
-from pdb import Restart
+
+
+# Imports/Functions
 from time import sleep
+# Imports/Functions
 
-print('.')            #For Cleaner Formatting
-sleep(0.5)            #For Cleaner Formatting
-print('.')            #For Cleaner Formatting
-sleep(0.5)            #For Cleaner Formatting
-print('.')            #For Cleaner Formatting
-sleep(0.5)            #For Cleaner Formatting
 
+
+# Cleaner Formatting
+print('.')            
+sleep(0.5)            
+print('.')            
+sleep(0.5)            
+print('.')            
+sleep(0.5)            
+# Cleaner Formatting
 
 
 
@@ -23,12 +31,14 @@ grade = float(input('Current Class Grade: '))
 
 
 
-print('.')            #For Cleaner Formatting
-sleep(0.5)            #For Cleaner Formatting
-print('.')            #For Cleaner Formatting
-sleep(0.5)            #For Cleaner Formatting
-print('.')            #For Cleaner Formatting
-sleep(0.5)            #For Cleaner Formatting
+# Cleaner Formatting
+print('.')            
+sleep(0.5)            
+print('.')            
+sleep(0.5)            
+print('.')            
+sleep(0.5)            
+# Cleaner Formatting
 
 
 

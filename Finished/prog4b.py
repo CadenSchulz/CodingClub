@@ -5,8 +5,6 @@ Description: Dividing positive integers and finding the quotient/remainder
 Saved as prog4b.py
 '''
 
-from math import remainder
-from turtle import right
 
 print('')
 print('')

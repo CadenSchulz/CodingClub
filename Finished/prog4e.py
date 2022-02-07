@@ -5,7 +5,13 @@ Description: Calculating a bowler's average score over three games.
 Saved as prog4e.py
 '''
 
+
+
+# Imports/Functions
 from time import sleep
+# Imports/Functions
+
+
 
 # Cleaner Formatting
 print('.')
