@@ -6,8 +6,8 @@ Saved as prog1.py
 '''
 
 print ('Caden Schulz')
-print ('475 Hill Ave.')
-print ('Glen Ellyn, IL 60137')
-print ('630-200-4551')
+print ('address')
+print ('city, state, zip code')
+print ('phone number')
 print ('March 27th, 2004')
 print ('Blue')
