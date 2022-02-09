@@ -5,7 +5,7 @@ Description: Basic personal information about me
 Saved as prog1.py
 '''
 
-print ('Caden Schulz')
+print ('C.Schulz')
 print ('address')
 print ('city, state, zip code')
 print ('phone number')
