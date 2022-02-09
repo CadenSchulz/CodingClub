@@ -12,36 +12,27 @@ Saved as prog4d.py
 
 # Imports/Functions
 from time import sleep
-# Imports/Functions
 
-
-
-# Cleaner Formatting
+# Cleaner Output Aesthetic
 print('.')            
 sleep(0.5)            
 print('.')            
 sleep(0.5)            
 print('.')            
 sleep(0.5)            
-# Cleaner Formatting
 
-
-
+# Variables
 grade = float(input('Current Class Grade: '))
 
+# Cleaner Output Aesthetic
+print('.')
+sleep(0.5)
+print('.')
+sleep(0.5)
+print('.')   
+sleep(0.5)
 
-
-# Cleaner Formatting
-print('.')            
-sleep(0.5)            
-print('.')            
-sleep(0.5)            
-print('.')            
-sleep(0.5)            
-# Cleaner Formatting
-
-
-
+# Taking The Inputted Integer and Matching It To A Specific "If" Statement
 if grade > 89.5 and grade <= 100:
     print('Your current grade is an "A" ')
 
