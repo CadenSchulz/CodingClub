@@ -10,4 +10,4 @@ Saved as prog5b.py
 
 # Variable/Determining length of inputted name
 name = input('Your Name: ')
-print('Your name,', name + ', has',len(name), 'letters in it!')
+print('Your name,', name + ', has',len(name), 'characters in it!')
