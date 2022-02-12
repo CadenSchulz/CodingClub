@@ -13,7 +13,7 @@ import math
 # Variables/Asking for two integers
 num1 = int(input('FIRST Number: '))
 num2 = int(input('SECOND Number: '))
+gcd = math.gcd(num1,num2)
 
 # Computing the GCD of the two integers
-print ('The gcd of', num1, 'and', num2, 'is: ')
-print (math.gcd(num1,num2))
+print (f'The GCD of {num1} and {num2} is {gcd}.')

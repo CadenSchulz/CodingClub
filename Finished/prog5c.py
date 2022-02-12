@@ -12,11 +12,13 @@ num1 = input('FIRST Number: ')
 num2 = input('SECOND Number: ')
 
 # Computing which number is larger
-if num1 > num2:
-    print('Your FIRST number,', num1 + ', is larger than your SECOND number,', num2 + '.')
-    quit()
-elif num2 > num1:
-    print('Your SECOND number,', num2 + ', is larger than your FIRST number,', num1 + '.')
-    quit()
-elif num1 == num2:
-    print(f'The Two Numbers You Inputted ({num1},{num2}) Are The Same!')
+while True:
+    if num1 > num2:
+        print('Your FIRST number,', num1 + ', is larger than your SECOND number,', num2 + '.')
+        break
+    elif num2 > num1:
+        print('Your SECOND number,', num2 + ', is larger than your FIRST number,', num1 + '.')
+        break
+    elif num1 == num2:
+        print(f'The Two Numbers You Inputted ({num1},{num2}) Are The Same!')
+        break

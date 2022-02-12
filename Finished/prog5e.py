@@ -1,5 +1,5 @@
 '''
-Created on Mon Feb 11 11:43:06 2022
+Created on Mon Feb 11 11:40:01 2022
 
 @author: C. Schulz
 
@@ -23,6 +23,6 @@ while True:
         print(number, 'does not have a square root. Please try again...')
         continue
     else:
-        root = math.sqrt(number)
-        print(f'The Square Root of {number} is {root}.')
+        root = float(math.sqrt(number))
+        print("{} {} {} {:.4f}".format('The Square Root of', number, 'is', root))
         break

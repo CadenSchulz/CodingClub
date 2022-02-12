@@ -21,11 +21,12 @@ ans = y//x
 rem = y%x
 
 # Computing Whether or Not The Two Integers are Factors
-if ans == 0 or rem >0:
+if ans == 0 or rem > 0:
     sleep(0.5)
-    print('These two integers ARE NOT factors of each other.')
+    print(f'| {x} is NOT a factor of {y}')
     sleep(0.5)
 else:
     sleep(0.5)
-    print('These two integers ARE factors of each other.')
+    print('\n')
+    print(f'| {x} is a factor of {y}')
     sleep(0.5)

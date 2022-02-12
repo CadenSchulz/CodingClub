@@ -13,7 +13,6 @@ from cmath import pi, sqrt
 import math
 from math import log
 import random
-from re import X
 
 # Variables/Asking for name and numbers
 name = input('Your Name: ')
