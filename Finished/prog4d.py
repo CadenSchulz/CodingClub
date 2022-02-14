@@ -33,29 +33,37 @@ print('.')
 sleep(0.5)
 
 # Taking The Inputted Integer and Matching It To A Specific "If" Statement
-if grade > 89.5 and grade <= 100:
-    print('Your current grade is an "A" ')
+while True:
+    if grade > 89.5 and grade <= 100:
+        sleep (0.5) # For Cleaner Formatting
+        print('Your current grade is an "A" ')
+        break
 
-if grade >= 79.5 and grade <= 89.49:
-    sleep (0.5) # For Cleaner Formatting
-    print('Your current grade is an "B" ')
+    elif grade >= 79.5 and grade <= 89.49:
+        sleep (0.5) # For Cleaner Formatting
+        print('Your current grade is an "B" ')
+        break
     
-if grade >= 69.5 and grade <= 79.49:
-    sleep (0.5) # For Cleaner Formatting
-    print('Your current grade is an "C" ')
+    elif grade >= 69.5 and grade <= 79.49:
+        sleep (0.5) # For Cleaner Formatting
+        print('Your current grade is an "C" ')
+        break
 
-if grade >= 59.5 and grade <= 69.49:
-    sleep (0.5) # For Cleaner Formatting
-    print('Your current grade is an "D" ')
+    elif grade >= 59.5 and grade <= 69.49:
+        sleep (0.5) # For Cleaner Formatting
+        print('Your current grade is an "D" ')
+        break
     
-if grade >= 0 and grade <= 59.49:
-    sleep (0.5) # For Cleaner Formatting
-    print('Your current grade is an "F" ')
+    elif grade >= 0 and grade <= 59.49:
+        sleep (0.5) # For Cleaner Formatting
+        print('Your current grade is an "F" ')
+        break
     
-if grade > 100:
-    sleep (0.5) # For Cleaner Formatting
-    print('Your grade can\'t be over 100! Please start over.'),
-    quit()
-if grade < 0:
-    sleep (0.5) # For Cleaner Formatting
-    print('Your grade can\'t be under 0! Please start over.')
+    elif grade > 100:
+        sleep (0.5) # For Cleaner Formatting
+        print('Your grade can\'t be over 100! Please start over.'),
+        break
+    elif grade < 0:
+        sleep (0.5) # For Cleaner Formatting
+        print('Your grade can\'t be under 0! Please start over.')
+        break

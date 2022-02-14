@@ -35,6 +35,9 @@ card7 = random.choice(list1)
 cardDealer1 = random.choice(list1)
 cardDealer2 = random.choice(list1)
 cardDealer3 = random.choice(list1)
+cardDealer4 = random.choice(list1)
+cardDealer5 = random.choice(list1)
+cardDealer6 = random.choice(list1)
 
 q1 = input('You are going to be playing black jack. Would you like to play? ')
 if q1 == 'yes':
@@ -117,6 +120,20 @@ if q1 == 'yes':
             print('DEALER\'S Second Card: ', cardDealer2)
             print('DEALER\'s Total: ', cardDealer1 + cardDealer2)
 
+            if (cardDealer1 + cardDealer2 == card1 + card2) and (cardDealer1 + cardDealer2 >= 17) and (cardDealer1 + cardDealer2 <= 21):
+                print('Tie! Push :|')
+                quit()
+            if (cardDealer1 + cardDealer2 > card1 + card2) and (cardDealer1 + cardDealer2 >= 17) and (cardDealer1 + cardDealer2 <= 21):
+                print('Dealer Wins! Sorry :(')
+                quit()
+            if (cardDealer1 + cardDealer2 < card1 + card2) and (cardDealer1 + cardDealer2 >= 17) and (cardDealer1 + cardDealer2 <= 21):
+                print('You Win! Congrats!')
+                quit()
+
+            if cardDealer1 + cardDealer2 > 21:
+                print('Dealer Busts. You Win!')
+                quit()
+
             if cardDealer1 + cardDealer2 < 17:
 
                 print('Dealer receives cards until they either get 21, go over 21, or get a total of 17+.')
@@ -134,7 +151,7 @@ if q1 == 'yes':
                     sleep(0.5)
                     print('Dealer Busts! You Win! Congrats :)')
                     quit()
-                if cardDealer1 + cardDealer2 + cardDealer3 > card1 + card2:
+                if (cardDealer1 + cardDealer2 + cardDealer3 > card1 + card2) and (cardDealer1 + cardDealer2 + cardDealer3 > 17) and (cardDealer1 + cardDealer2 + cardDealer3 < 21):
                     print('.')
                     sleep(0.5)
                     print('.')
@@ -145,7 +162,7 @@ if q1 == 'yes':
                     sleep(0.5)
                     print('------------------')
                     quit()
-                if cardDealer1 + cardDealer2 + cardDealer3 < card1 + card2:
+                if (cardDealer1 + cardDealer2 + cardDealer3 < card1 + card2) and (cardDealer1 + cardDealer2 + cardDealer3 > 17) and (cardDealer1 + cardDealer2 + cardDealer3 < 21):
                     print('.')
                     sleep(0.5)
                     print('.')
@@ -156,7 +173,7 @@ if q1 == 'yes':
                     sleep(0.5)
                     print('------------------')
                     quit()
-                if cardDealer1 + cardDealer2 == card1 + card2:
+                if (cardDealer1 + cardDealer2 + cardDealer3 == card1 + card2) and (cardDealer1 + cardDealer2 + cardDealer3 > 17) and (cardDealer1 + cardDealer2 + cardDealer3 < 21):
                     print('.')
                     sleep(0.5)
                     print('.')
@@ -167,10 +184,156 @@ if q1 == 'yes':
                     sleep(0.5)
                     print('------------------')
                     quit()
+                if cardDealer1 + cardDealer2 + cardDealer3 < 17:
+                    print('DEALER\'s Fourth Card: ', cardDealer4)
+                    print('DEALER\'s Total: ', cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4)
+                    if cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 > 21:
+                        print('.')
+                        sleep(0.5)
+                        print('.')
+                        sleep(0.5)
+                        print('Dealer Busts! You Win! Congrats :)')
+                        quit()
+                    if (cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 > card1 + card2) and (cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 >= 17) and (cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 <= 17):
+                        print('.')
+                        sleep(0.5)
+                        print('.')
+                        sleep(0.5)
+
+                        print('Dealer Wins! Sorry :(')
+
+                        sleep(0.5)
+                        print('------------------')
+                        quit()
+                    if (cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 < card1 + card2) and (cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 >= 17) and (cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 <= 17):
+                        print('.')
+                        sleep(0.5)
+                        print('.')
+                        sleep(0.5)
+
+                        print('You Win! Congrats :)')
+                
+                        sleep(0.5)
+                        print('------------------')
+                        quit()
+                    if (cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 == card1 + card2) and (cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 >= 17) and (cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 <= 17):
+                        print('.')
+                        sleep(0.5)
+                        print('.')
+                        sleep(0.5)
+
+                        print('Push/Tie! :| ')
+                
+                        sleep(0.5)
+                        print('------------------')
+                        quit()
+                    if cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 < 17:
+                        print('DEALER\'s Fifth Card: ', cardDealer5)
+                        print('DEALER\'s Total: ', cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 + cardDealer5)
+                        if cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 + cardDealer5 > 21:
+                            print('.')
+                            sleep(0.5)
+                            print('.')
+                            sleep(0.5)
+                            print('Dealer Busts! You Win! Congrats :)')
+                            quit()
+                        if (cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 + cardDealer5 > card1 + card2) and (cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 + cardDealer5 >= 17) and (cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 + cardDealer5 <= 21):
+                            print('.')
+                            sleep(0.5)
+                            print('.')
+                            sleep(0.5)
+
+                            print('Dealer Wins! Sorry :(')
+
+                            sleep(0.5)
+                            print('------------------')
+                            quit()
+                        if (cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 + cardDealer5 < card1 + card2) and (cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 + cardDealer5 >= 17) and (cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 + cardDealer5 <= 21):
+                            print('.')
+                            sleep(0.5)
+                            print('.')
+                            sleep(0.5)
+
+                            print('You Win! Congrats :)')
+                
+                            sleep(0.5)
+                            print('------------------')
+                            quit()
+                        if (cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 + cardDealer5 == card1 + card2) and (cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 + cardDealer5 >= 17) and (cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 + cardDealer5 <= 21):
+                            print('.')
+                            sleep(0.5)
+                            print('.')
+                            sleep(0.5)
+
+                            print('Push/Tie! :| ')
+                
+                            sleep(0.5)
+                            print('------------------')
+                            quit()
+                        if cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 + cardDealer5 < 17:
+                            print('DEALER\'s Fifth Card: ', cardDealer6)
+                            print('DEALER\'s Total: ', cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 + cardDealer5 + cardDealer6)
+                            if cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 + cardDealer5 + cardDealer6 > 21:
+                                print('.')
+                                sleep(0.5)
+                                print('.')
+                                sleep(0.5)
+                                print('Dealer Busts! You Win! Congrats :)')
+                                quit()
+                            if (cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 + cardDealer5 + cardDealer6 > card1 + card2) and (cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 + cardDealer5 + cardDealer6 >= 17) and (cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 + cardDealer5 + cardDealer6 <= 21):
+                                print('.')
+                                sleep(0.5)
+                                print('.')
+                                sleep(0.5)
+
+                                print('Dealer Wins! Sorry :(')
+
+                                sleep(0.5)
+                                print('------------------')
+                                quit()
+                            if (cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 + cardDealer5 + cardDealer6 < card1 + card2) and (cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 + cardDealer5 + cardDealer6 >= 17) and (cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 + cardDealer5 + cardDealer6 <= 21):
+                                print('.')
+                                sleep(0.5)
+                                print('.')
+                                sleep(0.5)
+
+                                print('You Win! Congrats :)')
+                
+                                sleep(0.5)
+                                print('------------------')
+                                quit()
+                            if (cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 + cardDealer5 + cardDealer6== card1 + card2) and (cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 + cardDealer5 + cardDealer6 >= 17) and (cardDealer1 + cardDealer2 + cardDealer3 + cardDealer4 + cardDealer5 + cardDealer6 <= 21):
+                                print('.')
+                                sleep(0.5)
+                                print('.')
+                                sleep(0.5)
+
+                                print('Push/Tie! :| ')
+                
+                                sleep(0.5)
+                                print('------------------')
+                                quit()
+                    
 
 
 
-            if (cardDealer1 + cardDealer2 > card1 + card2) and (cardDealer1 + cardDealer2) > 17:
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            if (cardDealer1 + cardDealer2 > card1 + card2) and (cardDealer1 + cardDealer2 >= 17):
                 print('.')
                 sleep(0.5)
                 print('.')
@@ -184,7 +347,7 @@ if q1 == 'yes':
 
 
 
-            if (cardDealer1 + cardDealer2 < card1 + card2) and (cardDealer1 + cardDealer2) > 17:
+            if (cardDealer1 + cardDealer2 < card1 + card2) and (cardDealer1 + cardDealer2 >= 17):
                 print('.')
                 sleep(0.5)
                 print('.')
@@ -198,7 +361,7 @@ if q1 == 'yes':
 
 
 
-            if (cardDealer1 + cardDealer2 == card1 + card2) and (cardDealer1 + cardDealer2) > 17:
+            if (cardDealer1 + cardDealer2 == card1 + card2) and (cardDealer1 + cardDealer2 >= 17):
                 print('.')
                 sleep(0.5)
                 print('.')
