@@ -9,7 +9,7 @@ Saved as prog5f.py
 '''
 
     # Imports/Math Import
-import math
+import math as math
 import random
 
     # Variables/Asking for name and numbers
@@ -33,21 +33,14 @@ quotient = float(num1/num2)
     # Reciprocal Variable
 reciprocal = float(1/num1)
 
+
     # Powers and Nth Root Variables
 power = pow(num1, num2)
 nthRoot = num1**(1/float(num2))
 fifthPower = num1**5
-
-    # Logarithm Variables
-if num1 or num2 < 0:
-    print('\n')
-else:
-    naturalLog = math.log(num1)
-if num1 or num2 < 0:
-    print('\n')
-else:
-    commonLog = math.log10(num2)
-
+    
+    
+    
     # Fibonacci Sequence Variables
 fib1 = num1 + num2
 fib2 = num2 + fib1
@@ -91,15 +84,17 @@ print('The', num1, 'root of', num2,'=', nthRoot)
 print(num1, 'to the 5th power =', fifthPower)
 
     # Common Log of The First Number
-if num1 or num2 < 0:
+if num1 < 0:
     print(f'The Common Log of {num1} does not exist!')
 else:
+    commonLog = math.log10(num1)
     print('The Common Log of', num1, '=', commonLog)
 
     # Natural Log of The Second Number
-if num1 or num2 < 0:
+if num2 < 0:
     print(f'The Natural Log of {num2} does not exist!')
 else:
+    naturalLog = math.log(num2)
     print('The Natural Log of', num2, '=', naturalLog)
 
     # Fibonacci Sequence
