@@ -15,6 +15,6 @@ number = 0
     # Printing Numbers In 5 Separate Rows
 while number < 5000:
     print("{:20d}".format(rows[number]), end = ' ')
-    number = number+1
+    number += 1
     if number % 5 == 0:
-        print('')
+        print('\n')
