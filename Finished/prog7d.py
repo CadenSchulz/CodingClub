@@ -19,4 +19,6 @@ for x in range(number + 1):
     x = x + 1
         # Prints The Numbers Added
     print(x-1)
+
+    # Prints The Sum Of All The Numbers
 print(f'The sum is {add}.')
