@@ -23,7 +23,7 @@ print('How Do You Want The Pattern To Look?')
 
     # Printing The Pattern
 while True:
-    q1 = input('Infinite or Singular: ')
+    q1 = input('Infinite, Singular, or Custom: ')
         # Printing The Pattern Infinitely
     if q1.lower() == 'infinite':
         while True:
@@ -37,6 +37,18 @@ while True:
         # Printing The Pattern One Single Time
     elif q1.lower() == 'singular':
         while x <= 1:
+            print(a)
+            print(b)
+            print(c)
+            print(d)
+            print(e)
+            print(f)
+            x += 1
+        break
+        # Printing The Pattern As Many Times As The User Wants
+    elif q1.lower() == 'custom':
+        ask = int(input('How Many Times Do You Want The Pattern To Print? '))
+        while x <= ask:
             print(a)
             print(b)
             print(c)

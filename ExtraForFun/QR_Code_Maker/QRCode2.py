@@ -22,9 +22,12 @@ ws.config(bg='#F25252')
 
 # ----> Step 3: Create Heading/Image at Bottom
 Label(ws, text = 'Benet Academy', font =('Comic Sans MS', 12, font.BOLD)).pack(side = TOP, padx = 50)
+
+'''
 photo = PhotoImage(file = "H:/.shortcut-targets-by-id/1qVslRslzOPZF6I_um-7kptss53kZwZVP/Schulz, Caden/ExtraForFun/Pictures/redwing.jpg")
 photoimage = photo.subsample(3, 3)
 Button(ws, image = photoimage, width = 250, height= 250).pack(side = BOTTOM, pady = 5)
+'''
 
 # ----> Step 3: Require all fields/Warning Message
 def generate_QR():

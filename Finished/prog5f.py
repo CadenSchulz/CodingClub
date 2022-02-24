@@ -69,7 +69,7 @@ else:
     print('SECOND Number\'s Opposite: ', abs(num2))
 
     # Reciprocal
-if num1 or num2 == 0:
+if num1 == 0:
     print(f'Reciprocal of {num1} does not exist!')
 else:
     print("{} {:.3f}".format('FIRST Number\'s Reciprocal: ', reciprocal))
