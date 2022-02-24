@@ -7,6 +7,7 @@ Description: Taking an inputted number and summing 1 through that number
 
 Saved as prog7d.py
 '''
+
     # Ask User For Number
 number = int(input("Enter Number: "))
 
