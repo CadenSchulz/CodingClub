@@ -14,7 +14,7 @@ import random
     # List Of Numbers On Dice
 list1 = [1,2,3,4,5,6]
 
-    # Variables/Times Flipped Per Number
+    # Variables/Times Rolled Per 2 Numbers
 x = 1
 scoreTwo = 0
 scoreThree = 0
@@ -28,46 +28,46 @@ scoreTen = 0
 scoreEleven = 0
 scoreTwelve = 0
 
-    # Picking Numbers 1-6 Randomly 1000 Times
+    # 2 Times: Picking Numbers 1-6 Randomly 1000 Times
 for x in range(1,1001):
     pick1 = random.choice(list1)
     pick2 = random.choice(list1)
     x += 1
-        # Pick For Two -- Adds 1 To How Many Times Two Was Flipped
+        # Pick For Two -- Adds 1 To How Many Times Two Was Rolled
     if pick1 + pick2== 2:
         scoreTwo += 1
-        # Pick For Three -- Adds 1 To How Many Times Three Was Flipped
+        # Pick For Three -- Adds 1 To How Many Times Three Was Rolled
     elif pick1 + pick2== 3:
         scoreThree += 1
-        # Pick For Four -- Adds 1 To How Many Times Four Was Flipped
+        # Pick For Four -- Adds 1 To How Many Times Four Was Rolled
     elif pick1 + pick2== 4:
         scoreFour += 1
-        # Pick For Five -- Adds 1 To How Many Times Five Was Flipped
+        # Pick For Five -- Adds 1 To How Many Times Five Was Rolled
     elif pick1 + pick2== 5:
         scoreFive += 1
-        # Pick For Six -- Adds 1 To How Many Times Six Was Flipped
+        # Pick For Six -- Adds 1 To How Many Times Six Was Rolled
     elif pick1 + pick2== 6:
         scoreSix += 1
-        # Pick For Seven -- Adds 1 To How Many Times Seven Was Flipped
+        # Pick For Seven -- Adds 1 To How Many Times Seven Was Rolled
     elif pick1 + pick2== 7:
         scoreSeven += 1
-        # Pick For Eight -- Adds 1 To How Many Times Eight Was Flipped
+        # Pick For Eight -- Adds 1 To How Many Times Eight Was Rolled
     elif pick1 + pick2== 8:
         scoreEight += 1
-        # Pick For Nine -- Adds 1 To How Many Times Nine Was Flipped
+        # Pick For Nine -- Adds 1 To How Many Times Nine Was Rolled
     elif pick1 + pick2== 9:
         scoreNine += 1
-        # Pick For Ten -- Adds 1 To How Many Times Ten Was Flipped
+        # Pick For Ten -- Adds 1 To How Many Times Ten Was Rolled
     elif pick1 + pick2== 10:
         scoreTen += 1
-        # Pick For Eleven -- Adds 1 To How Many Times Eleven Was Flipped
+        # Pick For Eleven -- Adds 1 To How Many Times Eleven Was Rolled
     elif pick1 + pick2== 11:
         scoreEleven += 1
-        # Pick For Twelve -- Adds 1 To How Many Times Twelve Was Flipped
+        # Pick For Twelve -- Adds 1 To How Many Times Twelve Was Rolled
     elif pick1 + pick2== 12:
         scoreTwelve += 1
 
-        # Percentages For Each Number Flipped
+        # Percentages For Each Number Rolled
     percentageTwo = scoreTwo/1000 * 100
     percentageThree = scoreThree/1000 * 100
     percentageFour = scoreFour/1000 * 100
@@ -80,7 +80,7 @@ for x in range(1,1001):
     percentageEleven = scoreEleven/1000 * 100
     percentageTwelve = scoreTwelve/1000 * 100
     
-    # Output For Percentages And How Many Times Each Number Was Flipped Randomly
+    # Output For Percentages And How Many Times Each Number Was Rolled Randomly
 print('\n')
 print('Rolling Two Dice 1000 Times...')
 print('\n')
