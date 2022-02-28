@@ -15,11 +15,11 @@ number = int(input("Enter Number: "))
 add = 0
 
     # Loop A Range Of The Number + 1
-for x in range(number + 1):
+for x in range(number):
     add = add + x
     x = x + 1
         # Prints The Numbers Added
-    print(x-1)
+    print(x - 1, end = " + ")
 
     # Prints The Sum Of All The Numbers
-print(f'The sum is {add}.')
+print(f'{number} = {add}.')
