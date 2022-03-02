@@ -22,4 +22,5 @@ for x in range(number):
     print(x - 1, end = " + ")
 
     # Prints The Sum Of All The Numbers
-print(f'{number} = {add}.')
+add2 = add + number
+print(f'{number} = {add2}.')
