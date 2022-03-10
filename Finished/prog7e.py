@@ -11,8 +11,8 @@ Saved as prog7c.py
     # Imports
 import random
 
-    # List Of Numbers On Dice
-list1 = [1,2,3,4,5,6]
+    # Numbers On Dice
+numbers = [1,2,3,4,5,6]
 
     # Variables/Times Rolled Per 2 Numbers
 x = 1
@@ -30,8 +30,8 @@ scoreTwelve = 0
 
     # 2 Times: Picking Numbers 1-6 Randomly 1000 Times
 for x in range(1,1001):
-    pick1 = random.choice(list1)
-    pick2 = random.choice(list1)
+    pick1 = random.choice(numbers)
+    pick2 = random.choice(numbers)
     x += 1
         # Pick For Two -- Adds 1 To How Many Times Two Was Rolled
     if pick1 + pick2== 2:

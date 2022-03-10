@@ -11,8 +11,8 @@ Saved as prog6f.py
     # Imports
 import random
 
-    # List Of Heads Or Tails
-list1 = ['Heads', 'Tails']
+    # Heads Or Tails Option
+ht = ['Heads', 'Tails']
 
     # Variables/Times Flipped Per Heads Or Tails
 x = 1
@@ -21,7 +21,7 @@ scoreTails = 0
 
     # Picking Heads Or Tails Randomly 1000 Times
 while x <= 1000:
-    pick = random.choice(list1)
+    pick = random.choice(ht)
     x += 1
         # Pick For Heads -- Adds 1 To How Many Times Heads Was Flipped
     if pick == 'Heads':

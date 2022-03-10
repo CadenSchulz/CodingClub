@@ -11,8 +11,8 @@ Saved as prog7c.py
     # Imports
 import random
 
-    # List Of Numbers On Dice
-list1 = [1,2,3,4,5,6]
+    # Numbers On Dice
+numbers = [1,2,3,4,5,6]
 
     # Variables/Times Flipped Per Number
 x = 1
@@ -25,7 +25,7 @@ scoreSix = 0
 
     # Picking Numbers 1-6 Randomly 5000 Times
 for x in range(1,5001):
-    pick = random.choice(list1)
+    pick = random.choice(numbers)
     x += 1
         # Pick For One -- Adds 1 To How Many Times One Was Flipped
     if pick == 1:

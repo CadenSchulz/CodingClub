@@ -7,7 +7,7 @@ Description: Computing factorials of integers
 
 Saved as prog8b.py
 '''
-
+    # Defining a function named Factorial/Multiplying the number by the next after the previous
 def Factorial(n):
     if n<0:
         print(-1)
@@ -17,7 +17,8 @@ def Factorial(n):
             x = x*y
     return x
 
+    # Asking user for a number
 q1 = int(input('Enter Number: '))
 
-answer = Factorial(q1)
-print(f'The factorial of {q1} is {answer}.')
+    # Printing the output/Calling the function
+print(f'The factorial of {q1} is {Factorial(q1)}.')
